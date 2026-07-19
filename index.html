@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harish HG — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Harish HG home"><span>H</span><b>G</b></a>
+        <p class="brand-name"><strong>HARISH HG</strong> / PORTFOLIO</p>
+        <div class="nav-links">
+          <a class="active" href="index.html">01 / HOME</a>
+          <a href="work.html">02 / WORK</a>
+          <a href="experience.html">03 / EXPERIENCE</a>
+          <a href="about.html">04 / ABOUT</a>
+          <a href="contact.html">05 / CONTACT</a>
+        </div>
+        <a class="outline-button connect" href="contact.html">LET'S CONNECT <span>↗</span></a>
+      </nav>
+
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CREATIVE LEAD, UI / UX</p>
+          <div class="eyebrow-rule"></div>
+          <p class="specialisms">UI / UX DESIGN <i></i> USER RESEARCH <i></i> DESIGN SYSTEMS</p>
+          <h1>HARISH<br /><em>HG.</em></h1>
+          <p class="intro">A BFA-trained visual designer turned UI/UX leader with 16+ years building intuitive, high-end interfaces for web, mobile, and desktop products.</p>
+          <div class="actions">
+            <a class="primary-button" href="work.html">VIEW MY WORK <span>↗</span></a>
+            <a class="outline-button" href="contact.html">GET IN TOUCH</a>
+          </div>
+          <dl class="stats">
+            <div><dt>16+</dt><dd>YEARS<br />EXPERIENCE</dd></div>
+            <div><dt>06</dt><dd>GLOBAL<br />CLIENTS</dd></div>
+            <div><dt>WEB</dt><dd>MOBILE &amp;<br />DESKTOP</dd></div>
+            <div><dt>UX</dt><dd>CREATIVE<br />LEAD</dd></div>
+          </dl>
+          <div class="location"><span>●</span> HEBBAL, BENGALURU <b></b> <span>◎</span> AVAILABLE FOR FULL-TIME &amp; CONTRACT</div>
+        </div>
+
+        <div class="portrait-zone">
+          <div class="aura"></div>
+          <div class="portrait-frame"><img src="assets/harish.png" alt="Harish HG" /></div>
+          <div class="portrait-dots"></div>
+          <div class="availability"><span></span> AVAILABLE FOR PROJECTS</div>
+          <div class="scroll">SCROLL TO EXPLORE <small>⌄</small></div>
+        </div>
+      </section>
+
+      <footer><span>TIME&nbsp;&nbsp; <strong id="clock">--:--:--</strong></span><span>THEME&nbsp;&nbsp; <i class="switch"><b></b></i></span></footer>
+    </main>
+    <script src="app.js"></script>
+    <script>
+      const clock = document.querySelector('#clock');
+      const tick = () => clock.textContent = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true }).format(new Date());
+      tick(); setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
